@@ -28,3 +28,30 @@ struct TWTag {
         return .black
     }
 }
+
+// MARK: - Decodable conformance
+
+extension TWTag: Decodable {
+    
+    enum CodingKeys: String, CodingKey {
+        
+        case id
+        case name
+        case colorString = "color"
+    }
+    
+    init(from decoder: Decoder) throws {
+        
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let id = try values.decode(String.self, forKey: .id)
+        let name = try values.decode(String.self, forKey: .name)
+        let colorString = try values.decode(String.self, forKey: .colorString)
+        
+        self.init(
+            id: id,
+            name: name,
+            colorString: colorString
+        )
+    }
+}
