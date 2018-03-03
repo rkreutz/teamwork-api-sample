@@ -83,7 +83,7 @@ class TWProjectsService {
         return Observable.create({ (observer) -> Disposable in
             
             let request = Alamofire.request(
-                    "\(AppURL.baseHost)/projects.json",
+                    "\(TWURL.baseHost)/projects.json",
                     headers: [
                         "Authorization": "Basic \("\(user):".data(using: .utf8)?.base64EncodedString() ?? "")"
                     ]
