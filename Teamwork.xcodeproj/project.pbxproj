@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		37D53D8C204B045700475FDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D53D8B204B045700475FDE /* AppDelegate.swift */; };
-		37D53D8E204B045700475FDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D53D8D204B045700475FDE /* ViewController.swift */; };
-		37D53D91204B045700475FDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D53D8F204B045700475FDE /* Main.storyboard */; };
 		37D53D93204B045700475FDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D53D92204B045700475FDE /* Assets.xcassets */; };
 		37D53D96204B045700475FDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D53D94204B045700475FDE /* LaunchScreen.storyboard */; };
 		87C58E2E47F6D2D07DA782E8 /* Pods_Teamwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A30B1E8CE95326A3AF14038 /* Pods_Teamwork.framework */; };
@@ -20,8 +18,6 @@
 		215C062EF75CF56E5BD9E321 /* Pods-Teamwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teamwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork.release.xcconfig"; sourceTree = "<group>"; };
 		37D53D88204B045700475FDE /* Teamwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teamwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D53D8B204B045700475FDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37D53D8D204B045700475FDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		37D53D90204B045700475FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37D53D92204B045700475FDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37D53D95204B045700475FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37D53D97204B045700475FDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +36,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3716CB45204B072800437EAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37D53D92204B045700475FDE /* Assets.xcassets */,
+				37D53D94204B045700475FDE /* LaunchScreen.storyboard */,
+				37D53D97204B045700475FDE /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		37D53D7F204B045600475FDE = {
 			isa = PBXGroup;
 			children = (
@@ -62,11 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				37D53D8B204B045700475FDE /* AppDelegate.swift */,
-				37D53D8D204B045700475FDE /* ViewController.swift */,
-				37D53D8F204B045700475FDE /* Main.storyboard */,
-				37D53D92204B045700475FDE /* Assets.xcassets */,
-				37D53D94204B045700475FDE /* LaunchScreen.storyboard */,
-				37D53D97204B045700475FDE /* Info.plist */,
+				3716CB45204B072800437EAD /* Supporting Files */,
 			);
 			path = Teamwork;
 			sourceTree = "<group>";
@@ -152,7 +154,6 @@
 			files = (
 				37D53D96204B045700475FDE /* LaunchScreen.storyboard in Resources */,
 				37D53D93204B045700475FDE /* Assets.xcassets in Resources */,
-				37D53D91204B045700475FDE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +222,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37D53D8E204B045700475FDE /* ViewController.swift in Sources */,
 				37D53D8C204B045700475FDE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,14 +229,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		37D53D8F204B045700475FDE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				37D53D90204B045700475FDE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		37D53D94204B045700475FDE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -361,7 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Teamwork/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Teamwork/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rkreutz.teamwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -376,7 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Teamwork/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Teamwork/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rkreutz.teamwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
