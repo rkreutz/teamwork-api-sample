@@ -19,6 +19,8 @@ struct TWProject {
         case unknown
         case active
         case archived
+        case current
+        case late
         case completed
         case all
     }
