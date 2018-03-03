@@ -40,7 +40,7 @@ class TWProjectsService {
     
     // MARK: Internal methods (services)
     
-    func projects(forUser user: String) -> Observable<[TWProject]> {
+    func projects(forUser user: String, withStatus status: TWProject.Status) -> Observable<[TWProject]> {
 
         // This is a convenience wrapper for the response, defined only in the function's scope
         struct ResponseWrapper: Decodable {
@@ -83,11 +83,13 @@ class TWProjectsService {
         return Observable.create({ (observer) -> Disposable in
             
             let request = Alamofire.request(
-                    "\(TWURL.baseHost)/projects.json",
-                    headers: [
-                        "Authorization": "Basic \("\(user):".data(using: .utf8)?.base64EncodedString() ?? "")"
-                    ]
-                )
+                "\(TWURL.baseHost)/projects.json",
+                parameters: ["status": "\(status)"],
+                encoding: URLEncoding.default,
+                headers: [
+                    "Authorization": "Basic \("\(user):".data(using: .utf8)?.base64EncodedString() ?? "")"
+                ]
+            )
                     
             request
                 .validate() // Validates the HTTP status code between 200..<300

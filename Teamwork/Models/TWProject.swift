@@ -12,6 +12,17 @@ import Foundation
 
 struct TWProject {
     
+    // MARK: Status enum
+    
+    enum Status: String {
+        
+        case unknown
+        case active
+        case archived
+        case completed
+        case all
+    }
+    
     // MARK: Internal variables
     
     let id: String
@@ -24,6 +35,17 @@ struct TWProject {
     let category: TWCategory
     let tags: [TWTag]
     let company: TWCompany
+    
+    // MARK: Private variables
+    
+    private let statusString: String
+    
+    // MARK: Computed properties
+    
+    var status: Status {
+        
+        return Status(rawValue: statusString) ?? .unknown
+    }
 }
 
 // MARK: - Decodable conformance
@@ -42,6 +64,7 @@ extension TWProject: Decodable {
         case category
         case tags
         case company
+        case status
     }
     
     init(from decoder: Decoder) throws {
@@ -58,6 +81,7 @@ extension TWProject: Decodable {
         let category = try values.decode(TWCategory.self, forKey: .category)
         let tags = try values.decode([TWTag].self, forKey: .tags)
         let company = try values.decode(TWCompany.self, forKey: .company)
+        let statusString = try values.decode(String.self, forKey: .status)
         
         guard let createdOnDate = DateFormatter.iso8601.date(from: createdOnString) else {
             
@@ -87,7 +111,8 @@ extension TWProject: Decodable {
             lastChangedOn: lastChangedOnDate,
             category: category,
             tags: tags,
-            company: company
+            company: company,
+            statusString: statusString
         )
     }
 }
