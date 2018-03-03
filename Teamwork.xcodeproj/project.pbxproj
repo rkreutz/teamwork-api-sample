@@ -12,9 +12,12 @@
 		37D53D91204B045700475FDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D53D8F204B045700475FDE /* Main.storyboard */; };
 		37D53D93204B045700475FDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D53D92204B045700475FDE /* Assets.xcassets */; };
 		37D53D96204B045700475FDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D53D94204B045700475FDE /* LaunchScreen.storyboard */; };
+		87C58E2E47F6D2D07DA782E8 /* Pods_Teamwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A30B1E8CE95326A3AF14038 /* Pods_Teamwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A30B1E8CE95326A3AF14038 /* Pods_Teamwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teamwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		215C062EF75CF56E5BD9E321 /* Pods-Teamwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teamwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork.release.xcconfig"; sourceTree = "<group>"; };
 		37D53D88204B045700475FDE /* Teamwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teamwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D53D8B204B045700475FDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37D53D8D204B045700475FDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		37D53D92204B045700475FDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37D53D95204B045700475FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37D53D97204B045700475FDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CE7739A8863ECBFB9D30905 /* Pods-Teamwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teamwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87C58E2E47F6D2D07DA782E8 /* Pods_Teamwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				37D53D8A204B045700475FDE /* Teamwork */,
 				37D53D89204B045700475FDE /* Products */,
+				7ADACD9E089B860503DD8B5D /* Pods */,
+				951D1614A3AB657011A7C291 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = Teamwork;
 			sourceTree = "<group>";
 		};
+		7ADACD9E089B860503DD8B5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CE7739A8863ECBFB9D30905 /* Pods-Teamwork.debug.xcconfig */,
+				215C062EF75CF56E5BD9E321 /* Pods-Teamwork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		951D1614A3AB657011A7C291 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A30B1E8CE95326A3AF14038 /* Pods_Teamwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37D53D9A204B045700475FDE /* Build configuration list for PBXNativeTarget "Teamwork" */;
 			buildPhases = (
+				E986B475825C532A777CD3FB /* [CP] Check Pods Manifest.lock */,
 				37D53D84204B045700475FDE /* Sources */,
 				37D53D85204B045700475FDE /* Frameworks */,
 				37D53D86204B045700475FDE /* Resources */,
+				336502E3856834B5541AA406 /* [CP] Embed Pods Frameworks */,
+				877AACE0DF259BB787183878 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		336502E3856834B5541AA406 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		877AACE0DF259BB787183878 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E986B475825C532A777CD3FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Teamwork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		37D53D84204B045700475FDE /* Sources */ = {
@@ -272,6 +357,7 @@
 		};
 		37D53D9B204B045700475FDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CE7739A8863ECBFB9D30905 /* Pods-Teamwork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +372,7 @@
 		};
 		37D53D9C204B045700475FDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 215C062EF75CF56E5BD9E321 /* Pods-Teamwork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
