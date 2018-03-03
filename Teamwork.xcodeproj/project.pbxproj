@@ -12,6 +12,9 @@
 		3716CB4C204B0E3800437EAD /* TWTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB4B204B0E3800437EAD /* TWTag.swift */; };
 		3716CB4E204B0EB000437EAD /* TWCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB4D204B0EB000437EAD /* TWCompany.swift */; };
 		3716CB52204B110700437EAD /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB51204B110700437EAD /* DateFormatter+Extensions.swift */; };
+		3716CB55204B311F00437EAD /* TWProjectsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB54204B311F00437EAD /* TWProjectsService.swift */; };
+		3716CB58204B31E600437EAD /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB57204B31E600437EAD /* String+Extensions.swift */; };
+		3716CB5B204B33C400437EAD /* AppURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB5A204B33C400437EAD /* AppURL.swift */; };
 		37D53D8C204B045700475FDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D53D8B204B045700475FDE /* AppDelegate.swift */; };
 		37D53D93204B045700475FDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D53D92204B045700475FDE /* Assets.xcassets */; };
 		37D53D96204B045700475FDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D53D94204B045700475FDE /* LaunchScreen.storyboard */; };
@@ -26,6 +29,9 @@
 		3716CB4B204B0E3800437EAD /* TWTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWTag.swift; sourceTree = "<group>"; };
 		3716CB4D204B0EB000437EAD /* TWCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWCompany.swift; sourceTree = "<group>"; };
 		3716CB51204B110700437EAD /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		3716CB54204B311F00437EAD /* TWProjectsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWProjectsService.swift; sourceTree = "<group>"; };
+		3716CB57204B31E600437EAD /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		3716CB5A204B33C400437EAD /* AppURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppURL.swift; sourceTree = "<group>"; };
 		37D53D88204B045700475FDE /* Teamwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teamwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D53D8B204B045700475FDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37D53D92204B045700475FDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +76,7 @@
 		3716CB4F204B10DA00437EAD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				3716CB56204B31D500437EAD /* String */,
 				3716CB50204B10F300437EAD /* DateFormatter */,
 			);
 			path = Utilities;
@@ -81,6 +88,23 @@
 				3716CB51204B110700437EAD /* DateFormatter+Extensions.swift */,
 			);
 			path = DateFormatter;
+			sourceTree = "<group>";
+		};
+		3716CB53204B30F300437EAD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3716CB5A204B33C400437EAD /* AppURL.swift */,
+				3716CB54204B311F00437EAD /* TWProjectsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3716CB56204B31D500437EAD /* String */ = {
+			isa = PBXGroup;
+			children = (
+				3716CB57204B31E600437EAD /* String+Extensions.swift */,
+			);
+			path = String;
 			sourceTree = "<group>";
 		};
 		37D53D7F204B045600475FDE = {
@@ -106,6 +130,7 @@
 			children = (
 				37D53D8B204B045700475FDE /* AppDelegate.swift */,
 				3716CB45204B072800437EAD /* Supporting Files */,
+				3716CB53204B30F300437EAD /* Services */,
 				3716CB46204B0BA600437EAD /* Models */,
 				3716CB4F204B10DA00437EAD /* Utilities */,
 			);
@@ -265,8 +290,11 @@
 				3716CB4A204B0D3300437EAD /* TWCategory.swift in Sources */,
 				3716CB52204B110700437EAD /* DateFormatter+Extensions.swift in Sources */,
 				3716CB4C204B0E3800437EAD /* TWTag.swift in Sources */,
+				3716CB58204B31E600437EAD /* String+Extensions.swift in Sources */,
+				3716CB5B204B33C400437EAD /* AppURL.swift in Sources */,
 				3716CB48204B0BF600437EAD /* TWProject.swift in Sources */,
 				37D53D8C204B045700475FDE /* AppDelegate.swift in Sources */,
+				3716CB55204B311F00437EAD /* TWProjectsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
