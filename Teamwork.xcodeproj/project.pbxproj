@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3716CB48204B0BF600437EAD /* TWProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB47204B0BF600437EAD /* TWProject.swift */; };
+		3716CB4A204B0D3300437EAD /* TWCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB49204B0D3300437EAD /* TWCategory.swift */; };
+		3716CB4C204B0E3800437EAD /* TWTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB4B204B0E3800437EAD /* TWTag.swift */; };
+		3716CB4E204B0EB000437EAD /* TWCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB4D204B0EB000437EAD /* TWCompany.swift */; };
 		37D53D8C204B045700475FDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D53D8B204B045700475FDE /* AppDelegate.swift */; };
 		37D53D93204B045700475FDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D53D92204B045700475FDE /* Assets.xcassets */; };
 		37D53D96204B045700475FDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D53D94204B045700475FDE /* LaunchScreen.storyboard */; };
@@ -16,6 +20,10 @@
 /* Begin PBXFileReference section */
 		1A30B1E8CE95326A3AF14038 /* Pods_Teamwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teamwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		215C062EF75CF56E5BD9E321 /* Pods-Teamwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teamwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teamwork/Pods-Teamwork.release.xcconfig"; sourceTree = "<group>"; };
+		3716CB47204B0BF600437EAD /* TWProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWProject.swift; sourceTree = "<group>"; };
+		3716CB49204B0D3300437EAD /* TWCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWCategory.swift; sourceTree = "<group>"; };
+		3716CB4B204B0E3800437EAD /* TWTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWTag.swift; sourceTree = "<group>"; };
+		3716CB4D204B0EB000437EAD /* TWCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWCompany.swift; sourceTree = "<group>"; };
 		37D53D88204B045700475FDE /* Teamwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teamwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D53D8B204B045700475FDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37D53D92204B045700475FDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +54,17 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3716CB46204B0BA600437EAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3716CB47204B0BF600437EAD /* TWProject.swift */,
+				3716CB49204B0D3300437EAD /* TWCategory.swift */,
+				3716CB4B204B0E3800437EAD /* TWTag.swift */,
+				3716CB4D204B0EB000437EAD /* TWCompany.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		37D53D7F204B045600475FDE = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +88,7 @@
 			children = (
 				37D53D8B204B045700475FDE /* AppDelegate.swift */,
 				3716CB45204B072800437EAD /* Supporting Files */,
+				3716CB46204B0BA600437EAD /* Models */,
 			);
 			path = Teamwork;
 			sourceTree = "<group>";
@@ -222,6 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3716CB4E204B0EB000437EAD /* TWCompany.swift in Sources */,
+				3716CB4A204B0D3300437EAD /* TWCategory.swift in Sources */,
+				3716CB4C204B0E3800437EAD /* TWTag.swift in Sources */,
+				3716CB48204B0BF600437EAD /* TWProject.swift in Sources */,
 				37D53D8C204B045700475FDE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
