@@ -1,5 +1,5 @@
 //
-//  AppURL.swift
+//  TWURL.swift
 //  Teamwork
 //
 //  Created by Rodrigo Kreutz on 3/3/18.
@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - App URLs
 
-struct AppURL {
+struct TWURL {
     
     static let baseHost = "https://yat.teamwork.com"
 }
