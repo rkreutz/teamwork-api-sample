@@ -15,3 +15,7 @@ Now you can run the project again and your projects should be listed.
 ## Some Specs
 
 This project was developed having MVVM in mind, so you should find a View Controller acompanied by its respective View Model. This project also uses some concepts from reactive programming using the RxSwift framework. Alamofire, a widely used HTTP networking framework, to make the HTTP requests. For downloading and caching images it was used Kingfisher, a lightweight framework for doing so.
+
+## Credits
+
+The star image used on this project was made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> and is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
