@@ -15,6 +15,11 @@
 		3716CB55204B311F00437EAD /* TWProjectsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB54204B311F00437EAD /* TWProjectsService.swift */; };
 		3716CB58204B31E600437EAD /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB57204B31E600437EAD /* String+Extensions.swift */; };
 		3716CB5B204B33C400437EAD /* TWURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB5A204B33C400437EAD /* TWURL.swift */; };
+		3716CB5E204B447300437EAD /* Projects.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3716CB5D204B447300437EAD /* Projects.storyboard */; };
+		3716CB62204B451800437EAD /* TWProjectsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB61204B451800437EAD /* TWProjectsListViewController.swift */; };
+		3716CB64204B5AC600437EAD /* TWProjectsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB63204B5AC600437EAD /* TWProjectsListViewModel.swift */; };
+		3716CB66204B5B4F00437EAD /* TWProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB65204B5B4F00437EAD /* TWProjectTableViewCell.swift */; };
+		3716CB69204B6AA700437EAD /* ProcessInfo+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB68204B6AA700437EAD /* ProcessInfo+Extensions.swift */; };
 		37D53D8C204B045700475FDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D53D8B204B045700475FDE /* AppDelegate.swift */; };
 		37D53D93204B045700475FDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D53D92204B045700475FDE /* Assets.xcassets */; };
 		37D53D96204B045700475FDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D53D94204B045700475FDE /* LaunchScreen.storyboard */; };
@@ -32,6 +37,11 @@
 		3716CB54204B311F00437EAD /* TWProjectsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWProjectsService.swift; sourceTree = "<group>"; };
 		3716CB57204B31E600437EAD /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		3716CB5A204B33C400437EAD /* TWURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWURL.swift; sourceTree = "<group>"; };
+		3716CB5D204B447300437EAD /* Projects.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Projects.storyboard; sourceTree = "<group>"; };
+		3716CB61204B451800437EAD /* TWProjectsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWProjectsListViewController.swift; sourceTree = "<group>"; };
+		3716CB63204B5AC600437EAD /* TWProjectsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWProjectsListViewModel.swift; sourceTree = "<group>"; };
+		3716CB65204B5B4F00437EAD /* TWProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWProjectTableViewCell.swift; sourceTree = "<group>"; };
+		3716CB68204B6AA700437EAD /* ProcessInfo+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProcessInfo+Extensions.swift"; sourceTree = "<group>"; };
 		37D53D88204B045700475FDE /* Teamwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teamwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D53D8B204B045700475FDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37D53D92204B045700475FDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +86,7 @@
 		3716CB4F204B10DA00437EAD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				3716CB67204B6A9000437EAD /* ProcessInfo */,
 				3716CB56204B31D500437EAD /* String */,
 				3716CB50204B10F300437EAD /* DateFormatter */,
 			);
@@ -107,6 +118,41 @@
 			path = String;
 			sourceTree = "<group>";
 		};
+		3716CB5C204B433F00437EAD /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				3716CB5D204B447300437EAD /* Projects.storyboard */,
+				3716CB5F204B447E00437EAD /* List */,
+				3716CB60204B448400437EAD /* Detail */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		3716CB5F204B447E00437EAD /* List */ = {
+			isa = PBXGroup;
+			children = (
+				3716CB61204B451800437EAD /* TWProjectsListViewController.swift */,
+				3716CB63204B5AC600437EAD /* TWProjectsListViewModel.swift */,
+				3716CB65204B5B4F00437EAD /* TWProjectTableViewCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		3716CB60204B448400437EAD /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		3716CB67204B6A9000437EAD /* ProcessInfo */ = {
+			isa = PBXGroup;
+			children = (
+				3716CB68204B6AA700437EAD /* ProcessInfo+Extensions.swift */,
+			);
+			path = ProcessInfo;
+			sourceTree = "<group>";
+		};
 		37D53D7F204B045600475FDE = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +177,7 @@
 				37D53D8B204B045700475FDE /* AppDelegate.swift */,
 				3716CB45204B072800437EAD /* Supporting Files */,
 				3716CB53204B30F300437EAD /* Services */,
+				3716CB5C204B433F00437EAD /* Projects */,
 				3716CB46204B0BA600437EAD /* Models */,
 				3716CB4F204B10DA00437EAD /* Utilities */,
 			);
@@ -217,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37D53D96204B045700475FDE /* LaunchScreen.storyboard in Resources */,
+				3716CB5E204B447300437EAD /* Projects.storyboard in Resources */,
 				37D53D93204B045700475FDE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,14 +335,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3716CB4E204B0EB000437EAD /* TWCompany.swift in Sources */,
+				3716CB64204B5AC600437EAD /* TWProjectsListViewModel.swift in Sources */,
 				3716CB4A204B0D3300437EAD /* TWCategory.swift in Sources */,
 				3716CB52204B110700437EAD /* DateFormatter+Extensions.swift in Sources */,
+				3716CB66204B5B4F00437EAD /* TWProjectTableViewCell.swift in Sources */,
 				3716CB4C204B0E3800437EAD /* TWTag.swift in Sources */,
+				3716CB69204B6AA700437EAD /* ProcessInfo+Extensions.swift in Sources */,
 				3716CB58204B31E600437EAD /* String+Extensions.swift in Sources */,
 				3716CB5B204B33C400437EAD /* TWURL.swift in Sources */,
 				3716CB48204B0BF600437EAD /* TWProject.swift in Sources */,
 				37D53D8C204B045700475FDE /* AppDelegate.swift in Sources */,
 				3716CB55204B311F00437EAD /* TWProjectsService.swift in Sources */,
+				3716CB62204B451800437EAD /* TWProjectsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

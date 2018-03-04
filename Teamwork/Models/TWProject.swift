@@ -6,7 +6,7 @@
 //  Copyright © 2018 Rodrigo Kreutz. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - Struct
 
@@ -23,6 +23,54 @@ struct TWProject {
         case late
         case completed
         case all
+        
+        var title: String {
+            
+            switch self {
+                
+            case .active:
+                return "Active"
+                
+            case .archived:
+                return "Archived"
+                
+            case .current:
+                return "Current"
+                
+            case .late:
+                return "Late"
+                
+            case .completed:
+                return "Completed"
+                
+            default:
+                return ""
+            }
+        }
+        
+        var color: UIColor {
+            
+            switch self {
+            
+            case .active:
+                return .purple
+                
+            case .archived:
+                return .orange
+                
+            case .current:
+                return .blue
+                
+            case .late:
+                return .red
+            
+            case .completed:
+                return .green
+                
+            default:
+                return .black
+            }
+        }
     }
     
     // MARK: Internal variables
