@@ -49,6 +49,7 @@ class TWProjectsListViewController: UIViewController {
             tableView.refreshControl = refreshControl
             tableView.tableFooterView = UIView()
             tableView.dataSource = self
+            tableView.delegate = self
         }
     }
     
@@ -61,6 +62,16 @@ class TWProjectsListViewController: UIViewController {
         tableView.setContentOffset(CGPoint(x: 0, y: -100), animated: true)
         refreshControl.beginRefreshing()
         updateTable()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard
+            let project = sender as? TWProject,
+            let destinationView = segue.destination as? TWProjectDetailViewController
+            else { return }
+        
+        destinationView.viewModel = TWProjectDetailViewModel(project: project)
     }
     
     // MARK: Private methods
@@ -123,10 +134,28 @@ extension TWProjectsListViewController: UITableViewDataSource {
         guard
             let projectCell = cell as? TWProjectTableViewCell,
             indexPath.row >= 0,
-            indexPath.row < self.viewModel.projects.count
+            indexPath.row < viewModel.projects.count
             else { return cell }
         
-        projectCell.configure(withProject: self.viewModel.projects[indexPath.row])
+        projectCell.configure(withProject: viewModel.projects[indexPath.row])
         return projectCell
+    }
+}
+
+// MARK: - UITableViewDelegate
+
+extension TWProjectsListViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        guard
+            indexPath.row >= 0,
+            indexPath.row < viewModel.projects.count
+            else { return }
+        
+        let project = viewModel.projects[indexPath.row]
+        performSegue(withIdentifier: "showDetail", sender: project)
     }
 }

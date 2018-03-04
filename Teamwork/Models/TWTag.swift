@@ -25,7 +25,7 @@ struct TWTag {
     
     var color: UIColor {
         
-        return .black
+        return UIColor(fromHex: colorString) ?? .black
     }
 }
 
