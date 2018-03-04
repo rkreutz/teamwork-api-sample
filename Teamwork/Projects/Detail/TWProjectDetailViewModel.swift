@@ -63,6 +63,11 @@ class TWProjectDetailViewModel {
         return project.category.color
     }
     
+    var projectTags: [TWTag] {
+        
+        return project.tags
+    }
+    
     // MARK: Private variables
     
     private let project: TWProject

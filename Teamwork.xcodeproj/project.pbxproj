@@ -23,6 +23,8 @@
 		3716CB6B204B76DB00437EAD /* TWProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB6A204B76DB00437EAD /* TWProjectDetailViewController.swift */; };
 		3716CB6D204B775A00437EAD /* TWProjectDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB6C204B775A00437EAD /* TWProjectDetailViewModel.swift */; };
 		3716CB70204B8C8D00437EAD /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB6F204B8C8D00437EAD /* UIColor+Extensions.swift */; };
+		3716CB72204C437600437EAD /* TWProjectTagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB71204C437600437EAD /* TWProjectTagCollectionViewCell.swift */; };
+		3716CB75204C539300437EAD /* EdgeInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3716CB74204C539300437EAD /* EdgeInsetLabel.swift */; };
 		37D53D8C204B045700475FDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D53D8B204B045700475FDE /* AppDelegate.swift */; };
 		37D53D93204B045700475FDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D53D92204B045700475FDE /* Assets.xcassets */; };
 		37D53D96204B045700475FDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D53D94204B045700475FDE /* LaunchScreen.storyboard */; };
@@ -48,6 +50,8 @@
 		3716CB6A204B76DB00437EAD /* TWProjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWProjectDetailViewController.swift; sourceTree = "<group>"; };
 		3716CB6C204B775A00437EAD /* TWProjectDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWProjectDetailViewModel.swift; sourceTree = "<group>"; };
 		3716CB6F204B8C8D00437EAD /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		3716CB71204C437600437EAD /* TWProjectTagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWProjectTagCollectionViewCell.swift; sourceTree = "<group>"; };
+		3716CB74204C539300437EAD /* EdgeInsetLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsetLabel.swift; sourceTree = "<group>"; };
 		37D53D88204B045700475FDE /* Teamwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teamwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D53D8B204B045700475FDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37D53D92204B045700475FDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 		3716CB4F204B10DA00437EAD /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				3716CB73204C537900437EAD /* UILabel */,
 				3716CB6E204B8C7700437EAD /* UIColor */,
 				3716CB67204B6A9000437EAD /* ProcessInfo */,
 				3716CB56204B31D500437EAD /* String */,
@@ -150,6 +155,7 @@
 			children = (
 				3716CB6A204B76DB00437EAD /* TWProjectDetailViewController.swift */,
 				3716CB6C204B775A00437EAD /* TWProjectDetailViewModel.swift */,
+				3716CB71204C437600437EAD /* TWProjectTagCollectionViewCell.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -168,6 +174,14 @@
 				3716CB6F204B8C8D00437EAD /* UIColor+Extensions.swift */,
 			);
 			path = UIColor;
+			sourceTree = "<group>";
+		};
+		3716CB73204C537900437EAD /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				3716CB74204C539300437EAD /* EdgeInsetLabel.swift */,
+			);
+			path = UILabel;
 			sourceTree = "<group>";
 		};
 		37D53D7F204B045600475FDE = {
@@ -361,6 +375,8 @@
 				3716CB4C204B0E3800437EAD /* TWTag.swift in Sources */,
 				3716CB69204B6AA700437EAD /* ProcessInfo+Extensions.swift in Sources */,
 				3716CB58204B31E600437EAD /* String+Extensions.swift in Sources */,
+				3716CB72204C437600437EAD /* TWProjectTagCollectionViewCell.swift in Sources */,
+				3716CB75204C539300437EAD /* EdgeInsetLabel.swift in Sources */,
 				3716CB6B204B76DB00437EAD /* TWProjectDetailViewController.swift in Sources */,
 				3716CB5B204B33C400437EAD /* TWURL.swift in Sources */,
 				3716CB48204B0BF600437EAD /* TWProject.swift in Sources */,
